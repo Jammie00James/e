@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
-
+from webdriver_manager.chrome import ChromeDriverManager
 
 app = Flask(__name__)
 
@@ -16,7 +16,7 @@ scheduler = BackgroundScheduler()
 def run_selenium():
     # Your Selenium script goes here
     # You can call the script or function that performs the web automatio
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     
     # Replace 'path/to/chromedriver.exe' with the actual path to your WebDriver
     
