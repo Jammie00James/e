@@ -16,7 +16,7 @@ scheduler = BackgroundScheduler()
 def run_selenium():
     # Your Selenium script goes here
     # You can call the script or function that performs the web automatio
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(executable_path=r"./chromedriver")
     
     # Replace 'path/to/chromedriver.exe' with the actual path to your WebDriver
     
