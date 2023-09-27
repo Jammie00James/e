@@ -52,8 +52,7 @@ def run_selenium():
     
     con.click()
     time.sleep(2)
-    alertt = driver.find_element(By.CLASS_NAME, "alert alert-warning")
-    print(alertt)
+    print(driver.current_url)
     # Close the browser
     driver.quit()
 
