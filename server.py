@@ -15,8 +15,7 @@ scheduler = BackgroundScheduler()
 @app.route('/run_selenium')
 def run_selenium():
     # Your Selenium script goes here
-    # You can call the script or function that performs the web automation
-    WebDriver executable
+    # You can call the script or function that performs the web automatio
     driver = webdriver.Chrome()
     
     # Replace 'path/to/chromedriver.exe' with the actual path to your WebDriver
