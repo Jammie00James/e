@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 app = Flask(__name__)
 
@@ -16,9 +16,10 @@ scheduler = BackgroundScheduler()
 def run_selenium():
     # Your Selenium script goes here
     # You can call the script or function that performs the web automatio
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--headless')
-    driver = webdriver.Chrome(options:chrome_options)
+    options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
+    driver = webdriver.Chrome(chrome_options=options)
     
     # Replace 'path/to/chromedriver.exe' with the actual path to your WebDriver
     
