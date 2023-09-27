@@ -19,7 +19,7 @@ def run_selenium():
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
-    driver = webdriver.Chrome(chrome_options=options)
+    driver = webdriver.Chrome(options=options)
     
     # Replace 'path/to/chromedriver.exe' with the actual path to your WebDriver
     
