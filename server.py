@@ -18,7 +18,7 @@ def run_selenium():
     # You can call the script or function that performs the web automatio
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+    driver = webdriver.Chrome(options:chrome_options)
     
     # Replace 'path/to/chromedriver.exe' with the actual path to your WebDriver
     
