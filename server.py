@@ -51,7 +51,9 @@ def run_selenium():
     code2.send_keys('1931225407')
     
     con.click()
-    
+    time.sleep(2)
+    alertt = driver.find_element(By.CLASS_NAME, "alert alert-warning")
+    print(alertt)
     # Close the browser
     driver.quit()
 
