@@ -33,15 +33,15 @@ def run_selenium():
         login_button = driver.find_element(By.NAME,'SUBMIT')  # Replace 'login' with the actual name of the login button
     
         # Enter your credentials
-        username_field.send_keys('B1139345')
-        password_field.send_keys('537268')
+        username_field.send_keys('B1144817')
+        password_field.send_keys('Osahu648?')
     
         # Submit the form (assuming it's a standard login form)s
         login_button.click()
     
         # Wait for a few seconds (you may need to adjust the sleep duration)
         time.sleep(2)
-        driver.get('https://waeup.uniben.edu/students/B1139345/accommodation/add')
+        driver.get('https://waeup.uniben.edu/students/B1144817/accommodation/add')
     
         code = driver.find_element(By.NAME,'ac_series')
         code2 = driver.find_element(By.NAME,'ac_number')
@@ -49,7 +49,7 @@ def run_selenium():
     
     
         code.send_keys('0')
-        code2.send_keys('1931225407')
+        code2.send_keys('3532469761')
     
         con.click()
         time.sleep(2)
