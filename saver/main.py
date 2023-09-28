@@ -11,11 +11,11 @@ def operate():
 
     element1 = driver.find_element(By.NAME, "form.login")
     element1.clear()
-    element1.send_keys("B1145429")
+    element1.send_keys("B1144817")
 
     element2 = driver.find_element(By.NAME, "form.password")
     element2.clear()
-    element2.send_keys("896313")
+    element2.send_keys("Osahu648?")
 
     element3 = driver.find_element(By.NAME, "SUBMIT")
 
@@ -40,7 +40,7 @@ def operate():
     hos.send_keys("0")
 
     code = driver.find_element(By.NAME, "ac_number")
-    code.send_keys("9527213010")
+    code.send_keys("3532469761")
 
     submitt = driver.find_element(By.NAME, "SUBMIT")
     submitt.click()
