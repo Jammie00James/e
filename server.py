@@ -30,7 +30,7 @@ def run_selenium():
         # Locate the username and password fields and the login button and interact with them
         username_field = driver.find_element(By.ID,'login')  # Replace 'username' with the actual name of the username input field
         password_field = driver.find_element(By.ID,'password')  # Replace 'password' with the actual name of the password input field
-        login_button = driver.find_element(By.NAME,'SUBMI')  # Replace 'login' with the actual name of the login button
+        login_button = driver.find_element(By.NAME,'SUBMIT')  # Replace 'login' with the actual name of the login button
     
         # Enter your credentials
         username_field.send_keys('B1139345')
